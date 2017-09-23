@@ -18,12 +18,12 @@ class Arc(object):
 
 
 class Sequence(object):
-    def __init__(self, arcs=None, default_angle=DEFAULT_ANGLE, color_list=None):
+    def __init__(self, arcs=None, angle=DEFAULT_ANGLE, color_list=None):
         if not arcs:
             self.arcs = []
         else:
             self.arcs = arcs.copy()
-        self.angle = default_angle
+        self.angle = angle
         if not color_list:
             self.color_list = list(colors.BASE_COLORS.values())
 
